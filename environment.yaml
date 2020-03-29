@@ -1,0 +1,12 @@
+# labeleditor.yaml
+
+
+# install: conda env create -f environment.yaml
+# update:  conda env update -f environment.yaml
+name: labeleditor
+dependencies:
+  - python=3.7
+  - pytables=3.4.4
+  - pandas=1.0.3
+  - opencv=3.4.1
+  - scipy=1.4.1
