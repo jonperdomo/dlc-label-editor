@@ -1,4 +1,4 @@
-# LabelEditor
+# Label editor
 Edit labels from DeepLabCut analysis outputs and save as a separate file in both HDF and MATLAB file formats.
 
 
