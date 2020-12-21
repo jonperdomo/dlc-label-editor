@@ -14,7 +14,7 @@ Open Anaconda Prompt and activate the conda environment:
 
 `activate labeleditor`
 
-In Anaconda Prompt, change the directory to **LabelEditor/** and add the label and video filepaths as the first and second arguments:
+In Anaconda Prompt, change the directory to **dlc-label-editor/** and add the label and video filepaths as the first and second arguments:
 
 `python editor.py labelfile videofile`
 
