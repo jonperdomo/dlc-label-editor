@@ -72,7 +72,7 @@ class Editor(object):
         # Get the current label's position
         x, y = self._get_label_xy()
 
-        # # Display
+        # Display
         self._draw_label(frame, x, y)
 
     def _get_label_xy(self):
@@ -148,11 +148,6 @@ class Editor(object):
         output_filename = "%s.mat" % input_filename
         output_filepath = os.path.normpath(os.path.join(folder, output_filename))
 
-        # # Load labels
-        # df = pd.read_hdf(self.__label_file)
-        # data_name = df.keys()[0][0]
-        # label_names = np.unique([k[1] for k in df.keys()])
-
         # Set up the output structure with X,Y and likelihood data
         df_out = {}
         for label in self.__label_names:
@@ -204,11 +199,8 @@ class Editor(object):
             elif key == 27:
                 running = False
 
-        # When everything done, release the.... video capture object
-        self.__cap.release()
-
-        # Closes all the frames
-        cv2.destroyAllWindows()
+        self.__cap.release()  # Release the video capture object
+        cv2.destroyAllWindows()  # Close the editor
 
         if self.__changes_made:
             logging.info(f"Saved  edited *.H5 label file: {self.__fixed_label_file}")
