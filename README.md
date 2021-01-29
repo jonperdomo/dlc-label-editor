@@ -50,8 +50,13 @@ Example:
 
 ![alt text](https://github.com/jonperdomo/LabelEditor/blob/master/Images/TrackedDLCExampleData2.PNG)
 
-## MATLAB file format
-The file will be saved in ***MATLAB (*.MAT)*** format after you exit the editor as a structure with X, Y, and likelihood data.
+### MATLAB file format
+The file will be saved in **MATLAB (.MAT)** format after you exit the editor as a structure with X, Y, and likelihood data.
 
-## Known issues
+### Known issues
 Pressing the window close button closes the UI but the video stays open. This is due to the limited functionality of OpenCV HighGUI. If this occurs just press **ESC** to exit.
+
+## Running the .H5 to .MAT file converter
+Convert an individual **.H5** label file to **.MAT** using the following command:
+
+`python matconverter.py labelfile`
